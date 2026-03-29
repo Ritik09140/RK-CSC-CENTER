@@ -1,0 +1,264 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home - RK CSC Center{% endblock %}
+
+{% block content %}
+<div class="particles-container"></div>
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content container">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+            <div class="badge-pill mb-3"><span>New</span> Premium Services Available</div>
+            <h1 class="gradient-text">e-Governance at Your Fingertips</h1>
+            <p>Apply for Aadhaar updates, PAN cards, Driving Licenses, Scholarships, and more from the comfort of your home. Fast, real, and fully secure service.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary btn-large">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#about" class="btn btn-secondary btn-large">About Developer <i class="fa-solid fa-code"></i></a>
+            </div>
+        </div>
+        <div class="hero-visual" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+            <div class="glass-panel pulse-panel">
+                <i class="fa-solid fa-laptop-code display-icon gradient-text"></i>
+                <div class="floating-badge badge-1"><i class="fa-solid fa-check-circle"></i> Digital Gujarat</div>
+                <div class="floating-badge badge-2"><i class="fa-solid fa-bolt"></i> Fast Processing</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services container section-padding">
+    <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="title-bold">Our <span class="highlight">Services</span></h2>
+        <p>Select a service to view details and apply online instantly via WhatsApp.<br>Our secure portal ensures lightning fast deliveries.</p>
+    </div>
+    
+    <div class="services-grid">
+        <!-- 1. SC/ST Scholarship -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20SC/ST%20Scholarship" target="_blank" class="service-card bg-grad-1" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                </div>
+                <h3>SC/ST Scholarship</h3>
+                <p class="service-desc">अनुसूचित जाति/जनजाति छात्रवृत्ति के लिए आवेदन करें</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 2. Digital Gujarat Scholarship -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20Digital%20Gujarat%20Scholarship" target="_blank" class="service-card bg-grad-2" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-file"></i></div>
+                </div>
+                <h3>Digital Gujarat</h3>
+                <p class="service-desc">Digital Gujarat portal par scholarship ya anya sewa apply karein</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 3. PAN Card -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20a%20PAN%20Card" target="_blank" class="service-card bg-grad-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-id-card"></i></div>
+                </div>
+                <h3>PAN Card</h3>
+                <p class="service-desc">Naya PAN Card banwane ke liye apply karein<br>पैन कार्ड</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 4. Driving Licence -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20a%20Driving%20Licence" target="_blank" class="service-card bg-grad-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-car"></i></div>
+                </div>
+                <h3>Driving Licence</h3>
+                <p class="service-desc">Driving Licence apply karein ya renew karein<br>ड्राइविंग लाइसेंस</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 5. Aadhar Card Update -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20update%20my%20Aadhar%20Card%20Mobile%20No" target="_blank" class="service-card bg-grad-5" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-fingerprint"></i></div>
+                </div>
+                <h3>Aadhar Update / Mobile No</h3>
+                <p class="service-desc">Aadhar Card me Mobile Number, Naam ya Pata update karein</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 6. Ration Card -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20Ration%20Card%20Services" target="_blank" class="service-card bg-grad-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-bowl-rice"></i></div>
+                </div>
+                <h3>Ration Card</h3>
+                <p class="service-desc">Ration Card banwane ya update karne ke liye apply karein</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 7. Fastag -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20need%20a%20Fastag%20for%20my%20vehicle" target="_blank" class="service-card bg-grad-7" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-tag"></i></div>
+                </div>
+                <h3>Fastag</h3>
+                <p class="service-desc">Vehicle Fastag ke liye turant apply karein<br>फ़ास्टैग</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 8. Income Certificate -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20an%20Income%20Certificate" target="_blank" class="service-card bg-grad-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                </div>
+                <h3>Income Certificate</h3>
+                <p class="service-desc">Aay Praman Patra banwane ke liye apply karein<br>आय प्रमाण पत्र</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 9. Caste Certificate -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20a%20Caste%20Certificate" target="_blank" class="service-card bg-grad-9" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-certificate"></i></div>
+                </div>
+                <h3>Caste Certificate</h3>
+                <p class="service-desc">Jati Praman Patra ke liye apply karein<br>जाति प्रमाण पत्र</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 10. Birth Certificate -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20a%20Birth%20Certificate" target="_blank" class="service-card bg-grad-10" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+                </div>
+                <h3>Birth Certificate</h3>
+                <p class="service-desc">Janm Praman Patra ke liye apply karein<br>जन्म प्रमाण पत्र</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 11. Labour Card -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20a%20Labour%20Card" target="_blank" class="service-card bg-grad-12" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                </div>
+                <h3>Labour Card</h3>
+                <p class="service-desc">Shramik Card / Labour Card ke liye apply karein<br>श्रमिक कार्ड</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+
+        <!-- 12. Ayushman Card -->
+        <a href="https://wa.me/919714039735?text=Hello,%20I%20want%20to%20apply%20for%20an%20Ayushman%20Card" target="_blank" class="service-card bg-grad-11" data-aos="fade-up" data-aos-delay="600">
+            <div class="card-glass-overlay"></div>
+            <div class="card-content">
+                <div class="service-header-top">
+                    <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                </div>
+                <h3>Ayushman Card</h3>
+                <p class="service-desc">Ayushman Bharat Yojana Health Card banvayein aur 5 Lakh tak ka muft ilaj paayein.</p>
+                <div class="whatsapp-btn-fake">
+                    <i class="fa-brands fa-whatsapp"></i> Apply Now
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section id="about" class="about-section container section-padding mb-5">
+    <div class="about-card glass-effect" data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="200">
+        <div class="about-grid">
+            <div class="about-image-col" data-aos="flip-left" data-aos-duration="2000">
+                <div class="profile-placeholder profile-animate">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+            </div>
+            <div class="about-text-col" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
+                <h2 class="title-bold">Hi, I'm <span class="highlight">Ritik</span></h2>
+                <div class="role-badge"><i class="fa-brands fa-java"></i> Java Developer | Full-Stack Web Developer</div>
+                
+                <p>Hello! I am a passionate, highly skilled <strong>Java Developer</strong> and <strong>Web Developer</strong>. I have expertise across almost all programming languages and specialize in building robust digital solutions that make everyday operations smooth.</p>
+                
+                <p>I built the dynamically animated <strong>RK CSC Center</strong> platform to make applying for essential government schemas easy, fast, and secure. Apply for any scheme straight from your home via WhatsApp, directly connected to me!</p>
+                
+                <div class="custom-website-banner mt-4 p-4" style="background: rgba(16, 185, 129, 0.15); border: 2px solid #10b981; border-radius: 16px; position:relative; overflow:hidden;" data-aos="zoom-in-up" data-aos-delay="400">
+                    <div style="position:absolute; top:-20px; right:-20px; font-size: 8rem; color: rgba(16,185,129,0.1);"><i class="fa-solid fa-rocket"></i></div>
+                    <h4 style="color: #34d399; margin-bottom: 8px; font-size:1.3rem;"><i class="fa-solid fa-wand-magic-sparkles"></i> Need a Custom Website?</h4>
+                    <p style="font-size: 1rem; margin-bottom: 0;">Whether you need a custom e-commerce portal, a personal portfolio, or a fully automated business software application, do not hesitate to contact me! I will design and build a premium, highly animated website tailored exactly to your needs.</p>
+                </div>
+
+                <div class="contact-pills mt-4">
+                    <a href="mailto:ritikkahnguda007@gmail.com" class="pill"><i class="fa-solid fa-envelope"></i> ritikkahnguda007@gmail.com</a>
+                    <a href="tel:+919714039735" class="pill"><i class="fa-solid fa-phone"></i> +91 9714039735</a>
+                    <a href="tel:+919909730682" class="pill"><i class="fa-solid fa-phone-volume"></i> +91 9909730682</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="support-banner glass-effect mb-5 p-4 text-center mx-auto" style="max-width: 800px;" data-aos="flip-up" data-aos-duration="1200">
+    <h3 class="gradient-text" style="font-size:2rem;"><i class="fa-solid fa-bullhorn"></i> Get Instant Support</h3>
+    <p class="mb-4" style="font-size:1.2rem;">Contact our team via WhatsApp or Call for immediate assistance.</p>
+    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://wa.me/919714039735" target="_blank" class="btn btn-primary btn-large whatsapp-pulse">
+            <i class="fa-brands fa-whatsapp"></i> Chat: 9714039735
+        </a>
+        <a href="https://wa.me/919909730682" target="_blank" class="btn btn-secondary btn-large">
+            <i class="fa-brands fa-whatsapp"></i> Chat: 9909730682
+        </a>
+    </div>
+</div>
+{% endblock %}

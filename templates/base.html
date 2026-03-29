@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RK CSC Center - Apply for all government schemes online. Need a custom website? Contact Ritik.">
+    <title>{% block title %}RK CSC Center - Complete e-Governance{% endblock %}</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Full Animated Background Shapes -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    
+    <nav class="navbar glass-effect" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container nav-content">
+            <a href="{% url 'home' %}" class="logo">
+                <i class="fa-solid fa-building-columns"></i> RK CSC <span class="highlight">Center</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#services">Services</a></li>
+                <li><a href="{% url 'home' %}#about">About Developer</a></li>
+            </ul>
+            <div class="nav-contact">
+                <a href="mailto:ritikkahnguda007@gmail.com" class="email-btn"><i class="fa-solid fa-envelope"></i> Email Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer glass-effect">
+        <div class="container footer-content" data-aos="fade-up">
+            <div class="footer-brand">
+                <h3>RK CSC <span class="highlight">Center</span></h3>
+                <p>Your premium gateway for Digital Gujarat and other essential government services, available directly from home. Built by Ritik.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'home' %}#services">Services</a></li>
+                    <li><a href="{% url 'home' %}#about">Develop Your Website</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Ritik</h4>
+                <p><i class="fa-solid fa-envelope"></i> ritikkahnguda007@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i> +91 9714039735</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9909730682</p>
+                <p><i class="fa-solid fa-location-dot"></i> Gujarat, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RK CSC Center. Designed and Developed lovingly by Ritik.</p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Smooth initialization and delayed reveal for a 'app opening' feel
+        setTimeout(() => {
+            AOS.init({
+                duration: 1200,
+                once: false,
+                mirror: true,
+                easing: 'ease-out-cubic'
+            });
+        }, 100);
+    </script>
+</body>
+</html>
